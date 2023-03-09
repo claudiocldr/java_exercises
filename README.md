@@ -1,0 +1,1 @@
+This is my repository of java exercises of the course I'm currently enrolled in.
