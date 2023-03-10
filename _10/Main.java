@@ -121,7 +121,7 @@ public class Main {
         boolean carIsDrivingFromRightToLeft = false;
 
         //Write your code here
-        // using the XOR operator to check that only condition must be true
+        // using the XOR operator to check that only one condition between the two must be true
         if (carIsDrivingFromLeftToRight ^ carIsDrivingFromRightToLeft) {
             System.out.println("safe");
         } else { System.out.println("CRASH!"); }
