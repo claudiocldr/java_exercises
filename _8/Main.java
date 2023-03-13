@@ -97,7 +97,7 @@ public class Main {
         // assigned the string value of intValueTrimmedStartStr into a new variable
         String stringValueTrimmedStartStrAfterOperations = String.valueOf(intValueTrimmedStartStr);
         // assigned endValue the concatenation value between these two variables
-      String endValue = trimmedStartStr + stringValueTrimmedStartStrAfterOperations;
+      String endValue = stringValueTrimmedStartStrAfterOperations + stringValueTrimmedStartStrAfterOperations;
       // assigned to a new variable the double value of the string endValue
       Double endValueDouble = Double.valueOf(endValue);
       // used some mathematical operations required by the exercise on endValueDouble
