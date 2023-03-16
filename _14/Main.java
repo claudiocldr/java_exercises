@@ -76,12 +76,13 @@ public class Main {
 
         // Write code here
         // for each loop using Math.max method
-        for (Integer number : items) {
-            maxNumber = Math.max(number, maxNumber);
-            minNumber = Math.min(number, minNumber);
-        }
-        // printing maxNumber and minNumber derived from for each loop using Math.max and Math.min method
-        System.out.println("Max number is " + maxNumber + " and min number is " +minNumber);
+//        for (Integer number : items) {
+//            maxNumber = Math.max(number, maxNumber);
+//            minNumber = Math.min(number, minNumber);
+//        }
+//        // printing maxNumber and minNumber derived from for each loop using Math.max and Math.min method
+//        System.out.println("Max number is " + maxNumber + " and min number is " +minNumber);
+
         // for each loop using if statement
         for (Integer number : items) {
             if (number >= maxNumber) {
@@ -92,6 +93,20 @@ public class Main {
             }
 
         }
+
+        //for i loop using ifstatement
+//        for (int i = 0; i < items.size(); i++) {
+//            if (items.get(i) >= maxNumber) {
+//                maxNumber = items.get(i);
+//            } else {}
+//            if (items.get(i) <= minNumber) {
+//                minNumber = items.get(i);
+//            }
+//
+//        }
+
+
+
         // printing maxNumber and minNumber derived from for each loop using if statement
         System.out.println("Max number is " + maxNumber + " and min number is " +minNumber);
     }
@@ -104,7 +119,7 @@ public class Main {
 
         for (
                 int index = 0;
-                index < names.size() - 2; // <---- Edit this line
+                index < 2; // <---- Edit this line
                 index = index + 1
         ) {
             System.out.println(names.get(index));
