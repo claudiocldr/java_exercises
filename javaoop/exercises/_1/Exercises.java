@@ -36,6 +36,7 @@ public class Exercises {
 
     }
 
+    // function that takes a String and an integer to create a new object student
     private static Student createNewStudent(String name, Integer age) {
         Student student = new Student();
 
@@ -62,20 +63,26 @@ public class Exercises {
         System.out.println("\nExercise 3:");
 
         // Write your code here
+        //added previous code to exercise 3
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
+        //added new list of Student class
         List<Student> students = new ArrayList<>();
+        //declared variable in which I will store the sum of all ages of students;
         int ageSum = 0;
 
-
+        //loop to create new objects using the function I previously built and then adding the field age of the objects
+        // together in the variable ageSum
         for (int index = 0; index < studentNames.size(); index++) {
             students.add(createNewStudent(studentNames.get(index), studentAges.get(index)));
             ageSum += studentAges.get(index);
 
         }
+        // calculating the average age of students dividing the sum of all ages by the number of the students
         int numberOfStudents = students.size();
         double averageAge = Double.valueOf(ageSum) / numberOfStudents;
-        System.out.println(averageAge);
+        //printing averageAge
+        System.out.println("the average age of students is " + averageAge);
 
     }
 }
