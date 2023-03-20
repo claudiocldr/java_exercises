@@ -28,8 +28,11 @@ public class Main {
                         """;
 
         long questionableFundsEuro = 5_000_000_000L;
+
+        // adding funds to balance
         myBankBalanceEuro += questionableFundsEuro;
 
+        // printing new balance
         System.out.println(myBankBalanceEuro);
 
         //Add the questionable funds to your bank balance and print it out!
@@ -66,7 +69,7 @@ public class Main {
     // I doubt there's something that costs more than 2 billion on amazon
     //2d: int
 
-    // we wanna know the exact weight at nanograms so I put a double
+    // we want to know the exact weight at nanograms so I put a double
     // 2e: double
 
     // short because the longest distance from two points on earth is around 16000 kms
