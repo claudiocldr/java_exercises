@@ -37,7 +37,7 @@ public class Exercises {
     }
 
     // function that takes a String and an integer to create a new object student
-    private static Student createNewStudent(String name, Integer age) {
+    private static Student createNewStudent(String name, int age) {
         Student student = new Student();
 
         student.name = name;

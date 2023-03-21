@@ -27,14 +27,14 @@ public class Exercises {
         List<Student> students = new ArrayList<>();
 
         for (int i = 0; i < studentAges.size(); i++) {
-            // print statement indicating the start of the constructor
-            System.out.println("constructing");
+
+
             // calling the constructor
             Student student = new Student(studentNames.get(i), studentAges.get(i));
             // adding the new object to the list
             students.add(student);
-            // print statement indicating the success of the constructor
-            System.out.println("constructed");
+
+
 
 
 
