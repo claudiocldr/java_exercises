@@ -1,6 +1,6 @@
 package javabasics.javaoop.exercises._3;
 
-import java.time.Month;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 import static java.time.format.DateTimeFormatter.ofPattern;
@@ -26,7 +26,13 @@ public class Exercises {
         // Write and use your 5 getters and setters!
         ArrayList<Student> students = new ArrayList<>();
         //using all 5 setters
-        students.add(new Student("c", 12, "2B", "latin", (ofPattern("03-05-1990"))));
+        students.add(new Student("giovanni", 22, "1A", "math", ofPattern("03-10-2000")));
+        students.get(0).setName("alberto");
+        students.get(0).setAge(13);
+        students.get(0).setClassroom("2B");
+        students.get(0).setSubject("latin");
+        students.get(0).setBirthDate(DateTimeFormatter.ofPattern("03-05-1998"));
+
         // using all 5 getters
         System.out.println(
                 students.get(0).getName() + " " +
@@ -54,8 +60,9 @@ public class Exercises {
         // creating again array list
         ArrayList<Student> students = new ArrayList<>();
         // using constructor
-        students.add(new Student("ca", 14, "2B", "math", (ofPattern("03-05-1990"))));
+        students.add(new Student("vincenza", 14, "2B", "math", (ofPattern("03-05-1990"))));
         // using getter to check if the counter works
+        students.get(0).getName();
         students.get(0).getName();
         //  printing the value of the counter
         System.out.println(students.get(0).getNameRequestCounter());

@@ -1,5 +1,6 @@
 package javabasics.javaoop.exercises._3;
 
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -13,13 +14,12 @@ public class Student {
 
     private int nameRequestCounter;
     // creating constructor
-    public Student (String name, int age, String classroom, String subject, DateTimeFormatter birthDate)
-    {setName(name);
-        setAge(age);
-        setClassroom(classroom);
-        setSubject(subject);
-        setBirthDate(birthDate);
-
+    public Student (String name, int age, String classroom, String subject, DateTimeFormatter birthDate) {
+        this.name = name;
+        this.age = age;
+        this.classroom = classroom;
+        this.subject = subject;
+        this.birthDate = birthDate;
     }
 // creating all setters methods
     public void setName (String name) {
@@ -81,10 +81,4 @@ public class Student {
     public int getNameRequestCounter() {
         return nameRequestCounter;
     }
-
-
-
-
-
-
 }
