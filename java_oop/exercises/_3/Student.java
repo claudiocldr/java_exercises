@@ -24,7 +24,7 @@ public class Student {
 // creating all setters methods
     public void setName (String name) {
         // creating constraint
-        if(name.length() > 1)
+        if(name != null && name.length() > 1)
         {this.name = name;}
         else {
             System.out.println("name is too short, cannot set name");
