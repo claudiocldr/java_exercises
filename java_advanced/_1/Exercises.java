@@ -94,20 +94,16 @@ public class Exercises {
         int min = Integer.MIN_VALUE;
 
 
-
-            // Your code
-        // for each loop to find the max value
+        // Your code
+        // for each loop to find the max and min value
         for (Integer number : numbers) {
             if (number > max || max == Integer.MAX_VALUE) {
                 max = number;
             }
-            // for each loop to find the min value
-            if (number < min || min == Integer.MIN_VALUE)
-            {
+            if (number < min || min == Integer.MIN_VALUE) {
                 min = number;
             }
         }
-
 
 
         if (max != 10 || min != 1) {
@@ -123,7 +119,7 @@ public class Exercises {
         // Your code
         // for each loop that cycles numbers of setA and checks if the number is currently cycling is present in setB
         for (Integer number : setA) {
-            if(setB.contains(number)) {
+            if (setB.contains(number)) {
                 itemsContainedInBothSets.add(number);
             }
         }
